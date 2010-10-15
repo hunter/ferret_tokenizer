@@ -14,6 +14,8 @@
         ('!')+ { RET; };
         #// twitter_user
         '@' (alnum)+  { RET; };
+        #// twitter hashtag
+        '#' (alnum)+  { RET; };
         #// smile_face 
         ':' ('-')? (')')+ { RET; };
         #// angry_face
